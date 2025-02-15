@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We chat</title>
+</head>
+<body>
+    <h1>Your message below</h1>
+    <form action="/product" method="POST" onsubmit="document.getElementById('username').value= localStorage.getItem('username')">
+        <input type="text" name="message" id="message">
+        <input type="hidden" name="username" id="username" >
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
